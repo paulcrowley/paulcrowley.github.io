@@ -244,20 +244,74 @@ section h2 {
     margin-bottom: 24px;
 }
 
+/* Software */
+#software {
+    text-align: center;
+}
+
+.software-list {
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.software-card {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 24px 28px;
+    text-align: left;
+}
+
+.software-meta h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.software-meta a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.software-meta a:hover {
+    color: var(--primary-color);
+}
+
+.software-description {
+    color: var(--text-light);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.software-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.software-link:hover {
+    text-decoration: underline;
+}
+
 .blog-link {
     display: inline-block;
     padding: 14px 32px;
-    background-color: #ff6719;
+    background-color: #000000;
     color: var(--bg-color);
     text-decoration: none;
     border-radius: 8px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1rem;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .blog-link:hover {
-    background-color: #e55a14;
+    background-color: #1f2937;
     transform: translateY(-2px);
 }
 
