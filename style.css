@@ -116,58 +116,105 @@ section h2 {
     font-size: 1.1rem;
 }
 
-/* Projects Section */
-#projects {
+/* Research Section */
+#research {
     background-color: var(--bg-secondary);
     margin: 0 -24px;
     padding-left: 24px;
     padding-right: 24px;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
-    max-width: 1000px;
+.research-list {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.project-card {
+.research-item {
     background: var(--bg-color);
-    padding: 32px;
+    padding: 28px 32px;
     border-radius: 12px;
     box-shadow: var(--card-shadow);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
-}
-
-.project-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 12px;
-    font-weight: 600;
-}
-
-.project-card p {
-    color: var(--text-light);
     margin-bottom: 20px;
-    font-size: 0.95rem;
 }
 
-.project-link {
+.research-item:last-child {
+    margin-bottom: 0;
+}
+
+.research-item h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.research-item .authors {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
+}
+
+.research-item .venue {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.research-links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.research-link {
     display: inline-block;
+    padding: 6px 16px;
+    background-color: var(--bg-secondary);
     color: var(--primary-color);
     text-decoration: none;
+    border-radius: 6px;
     font-weight: 500;
-    font-size: 0.9rem;
-    transition: color 0.2s ease;
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.project-link:hover {
-    color: var(--primary-hover);
+.research-link:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/* Blog Section */
+#blog {
+    text-align: center;
+}
+
+.blog-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-content p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+.blog-link {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #ff6719;
+    color: var(--bg-color);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.blog-link:hover {
+    background-color: #e55a14;
+    transform: translateY(-2px);
 }
 
 /* Contact Section */
