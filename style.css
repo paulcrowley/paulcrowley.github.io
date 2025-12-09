@@ -17,10 +17,12 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 118%;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.125rem;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -41,11 +43,24 @@ header {
     backdrop-filter: blur(10px);
     z-index: 100;
     border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.site-title:hover {
+    color: var(--primary-color);
 }
 
 nav {
     display: flex;
-    justify-content: center;
     gap: 40px;
 }
 
